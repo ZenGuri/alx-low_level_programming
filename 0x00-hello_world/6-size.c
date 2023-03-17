@@ -7,14 +7,9 @@
  *Return always 0 (success)
  */
 
-main()
+int main(void)
 
 {
-char           ch = ' ';
-int            int_num = 0;
-float          flt_num = 0.0f;
-long int       long_int_num = 0;
-long long int  long_long_int_num = 0;
 
 printf("sizeof a  char is : %d - byte\n", sizeof(char));
 printf("sizeof an int  is : %d - byte\n", sizeof(int));
