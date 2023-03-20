@@ -4,7 +4,6 @@
  *  Description: 'print numbers of base 10'
  *  Retur: Always 0 ;
  */
-
 int main(void)
 {
 	int n;
