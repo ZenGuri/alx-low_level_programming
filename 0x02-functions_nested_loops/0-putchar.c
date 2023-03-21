@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *  main - Entry point
- *  Description: 'prints _putchar to stout'
- *  return : always 0
+ * main - Entry point
+ * Description: 'prints _putchar to stout'
+ * Return : always 0
  */
 
 int main(void)
