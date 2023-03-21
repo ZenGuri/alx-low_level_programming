@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  * Description: 'prints _putchar to stout'
- * Return : always 0
+ * Return: always 0
  */
 
 int main(void)
