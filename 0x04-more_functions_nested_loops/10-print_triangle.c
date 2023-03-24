@@ -20,7 +20,9 @@ for (i = 1; i <= size; i++)
 	{
 		if (j <= (size - i))
 			_putchar(' ');
-		else _putchar('#');
+		else
+			_putchar('#');
 	}
-	_putchar('\n');}
+	_putchar('\n');
+}
 }
