@@ -86,6 +86,6 @@ char **strtow(char *str)
 			str++;
 		}
 	}
-	
+
 	return (words);
 }
