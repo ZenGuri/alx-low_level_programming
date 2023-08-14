@@ -1,23 +1,23 @@
+#include <stdbool.h>
 #include <stddef.h>
 
 /**
- * is_palindrome_helper - Recursive helper function.
+ * is_palindrome_helper - Recursive helper function to check if a string is a palindrome.
  * @s: Pointer to the string to check.
  * @start: Starting index of the current substring.
  * @end: Ending index of the current substring.
  *
- * Return: 1 if the substring is a palindrome, 0 otherwise.
+ * Return: true if the substring is a palindrome, false otherwise.
  */
-int is_palindrome_helper(char *s, int start, int end)
+bool is_palindrome_helper(char *s, size_t start, size_t end)
 {
 	if (start >= end)
-		return (1);
-
+		return true;
 	if (s[start] != s[end])
-		return (0);
-
-	return (is_palindrome_helper(s, start + 1, end - 1));
+		return false;
+	return is_palindrome_helper(s, start + 1, end - 1);
 }
+
 /**
  * is_palindrome - Checks if a string is a palindrome.
  * @s: Pointer to the string to check.
@@ -26,10 +26,8 @@ int is_palindrome_helper(char *s, int start, int end)
  */
 int is_palindrome(char *s)
 {
-	int length = 0;
-
-	while (s[length] != '\0')
-		length++;
-
-	return (is_palindrome_helper(s, 0, length - 1));
+	size_t length = str_length(s);
+	if (length == 0)
+	       	return 1;
+	return (is_palindrome_helper(s, 0, length - 1) ? 1 : 0);
 }
